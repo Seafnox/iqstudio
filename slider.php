@@ -4,7 +4,7 @@ function slider($ImageArray) { ?>
         <div class="slider">
             <? foreach($ImageArray as $Item) { ?>
                 <div class="item">
-                    <img src="img/slider/<?= $Item ?>">
+                    <img src="img/slider/<?= $Item ?>" alt="">
                 </div>
             <? } ?>
         </div>

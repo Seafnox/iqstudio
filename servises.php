@@ -3,7 +3,7 @@ if ($access != 1) exit();
 include_once("slider.php");
 ?>
 <div class="block servises_block">
-    <duv class="container">
+    <div class="container">
         <h1>Архитектура и дизайн</h1>
         <div class="row">
             <div class="col-sm-4">
@@ -24,10 +24,10 @@ include_once("slider.php");
                 ?>
             </div>
         </div>
-    </duv>
+    </div>
 </div>
 <div class="block servises_block text-right">
-    <duv class="container">
+    <div class="container">
         <h1>Инженерные решения</h1>
         <div class="row">
             <div class="col-sm-8 less_margin_top">
@@ -48,10 +48,10 @@ include_once("slider.php");
                 </p>
             </div>
         </div>
-    </duv>
+    </div>
 </div>
 <div class="block servises_block">
-    <duv class="container">
+    <div class="container">
         <h1>Комплексное строительство</h1>
         <div class="row">
             <div class="col-sm-4">
@@ -72,10 +72,10 @@ include_once("slider.php");
                 ?>
             </div>
         </div>
-    </duv>
+    </div>
 </div>
 <div class="block servises_block text-right">
-    <duv class="container">
+    <div class="container">
         <h1>Производство</h1>
         <div class="row">
             <div class="col-sm-8 less_margin_top">
@@ -96,10 +96,10 @@ include_once("slider.php");
                 </p>
             </div>
         </div>
-    </duv>
+    </div>
 </div>
 <div class="block servises_block">
-    <duv class="container">
+    <div class="container">
         <h1>Ландшафтное проектирование и благоустройство</h1>
         <div class="row">
             <div class="col-sm-4">
@@ -120,5 +120,5 @@ include_once("slider.php");
                 ?>
             </div>
         </div>
-    </duv>
+    </div>
 </div>

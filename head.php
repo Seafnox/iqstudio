@@ -4,10 +4,9 @@ if ($access != 1) exit();
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=1024">
     <meta property="og:description" content=""/>
-    <title></title>
+    <title>VALEEV & RAY</title>
     <link rel="shortcut icon" href="/icon/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">

@@ -533,10 +533,6 @@ body section * {
 .news_block .item .background_image img {
     z-index: 0;
     display: inline-block;
-    margin-left: -50%;
-    margin-right: -50%;
-    margin-top: -50%;
-    margin-bottom: -50%;
     width: 200%;
 }
 .news_block .item .date {
@@ -674,6 +670,9 @@ body section * {
     margin-bottom: -1px;
 }
 
+.block img {
+    max-width: 100%;
+}
 .portfolio_block .row {
     margin-bottom:70px;
 }

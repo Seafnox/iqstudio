@@ -6,7 +6,7 @@ include_once("slider.php");
     <div class="row">
         <div class="col-sm-6 text-right">
             <div class="margined_left">
-                <img src="img/portfolio/portfolio_0.jpg" width="100%" class="border-right">
+                <img src="img/portfolio/portfolio_0.jpg" alt="iqstudio" class="border-right">
             </div>
         </div>
         <div class="col-sm-6">
@@ -28,14 +28,14 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_1.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_1.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_2.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_2.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
@@ -44,7 +44,7 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_3.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_3.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
@@ -59,7 +59,7 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <img src="img/portfolio/portfolio_5.jpg" width="100%">
+            <img src="img/portfolio/portfolio_5.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
@@ -81,7 +81,7 @@ include_once("slider.php");
     <div class="row">
         <div class="col-sm-6 text-right">
             <div class="margined_left">
-                <img src="img/portfolio/portfolio_6.jpg" width="100%" class="border-right">
+                <img src="img/portfolio/portfolio_6.jpg" alt="iqstudio" class="border-right">
             </div>
         </div>
         <div class="col-sm-6">
@@ -103,14 +103,14 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_7.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_7.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_8.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_8.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
@@ -119,14 +119,14 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_9.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_9.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_10.jpg" width="100%">
+            <img src="img/portfolio/portfolio_10.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
@@ -148,7 +148,7 @@ include_once("slider.php");
     <div class="row">
         <div class="col-sm-6 text-right">
             <div class="margined_left">
-                <img src="img/portfolio/portfolio_11.jpg" width="100%" class="border-right">
+                <img src="img/portfolio/portfolio_11.jpg" alt="iqstudio" class="border-right">
             </div>
         </div>
         <div class="col-sm-6">
@@ -170,14 +170,14 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_2.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_2.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_3.jpg" width="100%" class="border-bottom">
+            <img src="img/portfolio/portfolio_3.jpg" alt="iqstudio" class="border-bottom">
             <div class="taglist">
                 <div class="tag">Частный проект</div>
                 <div class="tag">Дизайн,проектирование</div>

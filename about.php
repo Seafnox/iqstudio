@@ -7,7 +7,7 @@ include_once("slider.php");
     <div class="row">
         <div class="col-sm-8 text-right overflow_hidden">
             <div class="margined_left">
-                <img src="img/about/about_1.jpg" alt="" width="100%;">
+                <img src="img/about/about_1.jpg" alt="iqstudio" width="100%;">
             </div>
         </div>
         <div class="col-sm-4">

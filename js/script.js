@@ -57,17 +57,17 @@ $(document).ready(function() {
         body.bind('mousewheel', function(event) {
             if ($(event.target).parents("#fade_wrapper").size() == 0 && $(event.target).parents(".map").size() == 0) {
                 event.preventDefault();
-                console.log(event);
+                //console.log(event);
                 var tmpDF = event.deltaFactor > 50 ? 50 : event.deltaFactor;
                 var nextScrollTop = this.scrollTop - (event.deltaY * tmpDF);
                 this.scrollTop = nextScrollTop;
-                console.log("nextScrollTop = " + nextScrollTop);
+                //console.log("nextScrollTop = " + nextScrollTop);
                 scrolling(nextScrollTop);
             }
         });
         $(window).on("scroll", function(e) {
             var s = $(window).scrollTop();
-            console.log("scroll = " + s);
+            //console.log("scroll = " + s);
             scrolling(s);
         });
     }
@@ -96,21 +96,23 @@ $(document).ready(function() {
         }
     });
     news_items.find(".background_image img").each(function() {
-            var bg_image = $(this);
+        var bg_image = $(this);
+        bg_image.closest(".item").on("mousemove", function(e) {
             var offset_left = bg_image.parent().offset().left;
             var offset_top = bg_image.parent().offset().top;
             var width = bg_image.parent().width();
             var height = bg_image.parent().height();
             var bg_def_width = bg_image.width() - width;
             var bg_def_height = bg_image.height() - height;
-            bg_image.closest(".item").on("mousemove", function(e) {
-                bg_image.css({
-                    marginLeft : -(event.pageX - offset_left + 0.5) * bg_def_width / width,
-                    marginTop : -(event.pageY - offset_top) * bg_def_height / height,
-                    marginRight : 0,
-                    marginBottom : 0
-                });
+            console.log({left:-(event.pageX - offset_left + 0.5), offsetLeft:offset_left, eventLeft: event.pageX});
+            console.log({top:-(event.pageY - offset_top), offsetTop:offset_top, eventTop: event.pageY});
+            bg_image.css({
+                marginLeft : -(event.pageX - offset_left + 0.5) * bg_def_width / width,
+                marginTop : -(event.pageY - offset_top) * bg_def_height / height,
+                marginRight : 0,
+                marginBottom : 0
             });
+        });
     });
 
     $(".map").each(function() {
@@ -186,7 +188,7 @@ function scrolling(nextScrollTop) {
             portfolio_headers.each(function (a, b) {
                 var header = $(this);
                 var offset = parseInt(header.data("offset"));
-                console.log("header " + a + " = " + (header.offset().top - offset));
+                //console.log("header " + a + " = " + (header.offset().top - offset));
                 if (nextScrollTop > header.offset().top - offset) {
                     if (nextScrollTop < header.offset().top) {
                         header.find(".image").css({marginTop: nextScrollTop - header.offset().top });
@@ -331,7 +333,7 @@ function open_popup(href) {
         type: "GET",
         dataType: "html",
         success: function(data){
-            console.log("Content: ", $(data).filter("#content").html());
+            //console.log("Content: ", $(data).filter("#content").html());
             popup_content.html($(data).filter("#content").html());
             validation(popup_content);
             sliding(popup_content);

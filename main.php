@@ -7,7 +7,7 @@ if ($access != 1) exit();
             <div class="col-sm-8">
                 <div class="item">
                     <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_1.jpg">
+                        <img src="img/portfolio_index/portfolio_index_1.jpg" alt="iqstudio">
                     </div>
                     <div class="description">
                         <h1>Дизайн интерьров</h1>
@@ -22,7 +22,7 @@ if ($access != 1) exit();
                     <div class="col-sm-6">
                         <div class="item">
                             <div class="image">
-                                <img src="img/portfolio_index/portfolio_index_2.jpg">
+                                <img src="img/portfolio_index/portfolio_index_2.jpg" alt="iqstudio">
                             </div>
                             <div class="description">
                                 <h1>Дизайн интерьров</h1>
@@ -35,7 +35,7 @@ if ($access != 1) exit();
                         </div>
                         <div class="item">
                             <div class="image">
-                                <img src="img/portfolio_index/portfolio_index_3.jpg">
+                                <img src="img/portfolio_index/portfolio_index_3.jpg" alt="iqstudio">
                             </div>
                             <div class="description">
                                 <h1>Дизайн интерьров</h1>
@@ -50,7 +50,7 @@ if ($access != 1) exit();
                     <div class="col-sm-6">
                         <div class="item">
                             <div class="image">
-                                <img src="img/portfolio_index/portfolio_index_4.jpg">
+                                <img src="img/portfolio_index/portfolio_index_4.jpg" alt="iqstudio">
                             </div>
                             <div class="description">
                                 <h1>Дизайн интерьров</h1>
@@ -67,7 +67,7 @@ if ($access != 1) exit();
             <div class="col-sm-4">
                 <div class="item">
                     <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_5.jpg">
+                        <img src="img/portfolio_index/portfolio_index_5.jpg" alt="iqstudio">
                     </div>
                     <div class="description">
                         <h1>Дизайн интерьров</h1>
@@ -80,7 +80,7 @@ if ($access != 1) exit();
                 </div>
                 <div class="item">
                     <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_6.jpg">
+                        <img src="img/portfolio_index/portfolio_index_6.jpg" alt="iqstudio">
                     </div>
                     <div class="description">
                         <h1>Дизайн интерьров</h1>
@@ -93,7 +93,7 @@ if ($access != 1) exit();
                 </div>
                 <div class="item">
                     <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_7.jpg">
+                        <img src="img/portfolio_index/portfolio_index_7.jpg" alt="iqstudio">
                     </div>
                     <div class="description">
                         <h1>Дизайн интерьров</h1>
@@ -108,7 +108,7 @@ if ($access != 1) exit();
             <div class="col-sm-12">
                 <div class="item">
                     <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_8.jpg">
+                        <img src="img/portfolio_index/portfolio_index_8.jpg" alt="iqstudio">
                     </div>
                     <div class="description">
                         <h1>Дизайн интерьров</h1>
@@ -134,17 +134,17 @@ if ($access != 1) exit();
                         <span>Апреля</span>
                     </div>
                     <p class="header">
-                        Современная архитектура малых форм от архитектурного бюро Valeev&Ray
+                        Современная архитектура малых форм от архитектурного бюро Valeev & Ray
                     </p>
                     <div class="description">
                         В конце прошлого года известное ангийское бюро Zaha Hadid Architects закончила
                         строительство нескольких станции железной дороги в Инсбруке
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg">
+                        <img src="img/news/news_1.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg">
+                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
@@ -163,10 +163,10 @@ if ($access != 1) exit();
                         знать об окружающей среде.
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg">
+                        <img src="img/news/news_1.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg">
+                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
@@ -177,17 +177,17 @@ if ($access != 1) exit();
                         <span>Апреля</span>
                     </div>
                     <p class="header">
-                        Современная архитектура малых форм от архитектурного бюро Valeev&Ray
+                        Современная архитектура малых форм от архитектурного бюро Valeev & Ray
                     </p>
                     <div class="description">
                         В конце прошлого года известное ангийское бюро Zaha Hadid Architects закончила
                         строительство нескольких станции железной дороги в Инсбруке
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg">
+                        <img src="img/news/news_1.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg">
+                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
