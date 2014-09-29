@@ -31,7 +31,7 @@ var fancybox_options = {
     autoSize	: true,
     //scrollOutside: false,
     closeClick	: false,
-    padding     : [20, 0, 70, 20],
+    padding     : [20, 20, 70, 20],
     margin      : [0, 60, 0, 60],
     arrows      : true,
     openEffect	: 'elastic',

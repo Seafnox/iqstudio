@@ -6,7 +6,7 @@ include_once("big_slider.php");
 <div class="block">
     <div class="date">24 Апреля 2014</div>
     <div class="hr"></div>
-    <h1>Заголовок H1. Пример длинного заголовка в неколько строк</h1>
+    <h1 class="noline">Заголовок H1. Пример длинного заголовка в неколько строк</h1>
     <?
     $ImageArray = array(
         array( href => "servese_1.png", width => "500", height => "300"),
@@ -64,6 +64,7 @@ include_once("big_slider.php");
         <li>В общем, точечное воздействие исключительно изменяет побочный PR-эффект.</li>
         <li>Ценовая стратегия, суммируя приведенные примеры, очевидна не для всех.</li>
     </ol>
+    <h4>Заголовок H4</h4>
     <ul>
         <li>
             Адекватная ментальность отражает сублимированный медийный канал.
@@ -87,23 +88,23 @@ include_once("big_slider.php");
         <a href="#" class="soc_link pt">Pintest</a>
     </div>
     <div class="nearly_news">
-        <div class="prev">
-            <div class="image">
+        <a class="prev" href="/">
+            <span class="image">
                 <img src="img/news/news_1.jpg">
-            </div>
-            <div class="description">
-                <p class="text">Предыдущая статья:</p>
-                <p class="name">Prada Needs You: The Search Is On</p>
-            </div>
-        </div>
-        <div class="next">
-            <div class="image">
+            </span>
+            <span class="description">
+                <span class="text">Предыдущая статья:</span>
+                <span class="name">Prada Needs You: The Search Is On</span>
+            </span>
+        </a>
+        <a class="next" href="/">
+            <span class="image">
                 <img src="img/news/news_2.jpg">
-            </div>
-            <div class="description">
-                <p class="text">Следующая статья:</p>
-                <p class="name">M&S Vs The Victoria's Secret Knicker Queen</p>
-            </div>
-        </div>
+            </span>
+            <span class="description">
+                <span class="text">Следующая статья:</span>
+                <span class="name">M&S Vs The Victoria's Secret Knicker Queen</span>
+            </span>
+        </a>
     </div>
 </div>
