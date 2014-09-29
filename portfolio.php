@@ -52,7 +52,11 @@ include_once("slider.php");
         </div>
         <div class="col-sm-6">
             <?
-            $ImageArray = array( "portfolio_4.jpg", "portfolio_4.jpg", "portfolio_4.jpg" );
+            $ImageArray = array(
+                array( href => "portfolio_4.jpg", width => "457", height => "300"),
+                array( href => "servese_1.png", width => "500", height => "300"),
+                array( href => "servese_3_2.png", width => "418", height => "300")
+            );
             echo slider($ImageArray);
             ?>
         </div>

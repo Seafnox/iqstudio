@@ -24,6 +24,7 @@ if ($access != 1) exit();
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.reject.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>

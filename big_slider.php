@@ -1,6 +1,6 @@
 <?php
-function slider($ImageArray) { ?>
-    <div class="slider_wrapper">
+function big_slider($ImageArray) { ?>
+    <div class="big_slider_wrapper slider_wrapper">
         <div class="slider">
             <? foreach($ImageArray as $Item) { ?>
                 <div class="item">

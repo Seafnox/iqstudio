@@ -33,7 +33,7 @@ include_once("slider.php");
                 современный финансовый менеджмент довольно быстро выводят компании iq_studio и
                 Capital Construction Group на уровень наиболее успешных компаний на рынке России.
             </p>
-            <p class="col-sm-offset-1">
+            <p class="col-sm-offset-1 bold margined_top">
                 2013 г. Эрик Валеев и Валерий Рэй принимают решение о создании архитектурно-строительной
                 компании и вывода ее на рынок услуг Великобритании, являющийся Мировым
                 лидером качества услуг в архитектуре и комплексном строительстве.
@@ -54,7 +54,11 @@ include_once("slider.php");
         </div>
         <div class="col-sm-4 margined_right">
             <?
-            $ImageArray = array( "about_2.png", "servese_1.png", "servese_3.png" );
+            $ImageArray = array(
+                array( href => "about_2.png", width => "500", height => "300"),
+                array( href => "servese_1.png", width => "500", height => "300"),
+                array( href => "servese_3_2.png", width => "418", height => "300")
+            );
             echo slider($ImageArray);
             ?>
         </div>

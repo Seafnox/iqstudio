@@ -6,7 +6,7 @@ if ($access != 1) exit();
         <h1>Новости</h1>
         <div class="row">
             <div class="col-sm-4">
-                <div class="item" data-href="?page=one_news">
+                <div class="item" href="?page=one_news">
                     <div class="date">
                         14
                         <span>Апреля</span>
@@ -27,7 +27,7 @@ if ($access != 1) exit();
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="item" data-href="?page=one_news">
+                <div class="item" href="?page=one_news">
                     <div class="date">
                         25
                         <span>Апреля</span>
@@ -49,7 +49,7 @@ if ($access != 1) exit();
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="item" data-href="?page=one_news">
+                <div class="item" href="?page=one_news">
                     <div class="date">
                         28
                         <span>Апреля</span>
@@ -70,7 +70,7 @@ if ($access != 1) exit();
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="item" data-href="?page=one_news">
+                <div class="item" href="?page=one_news">
                     <div class="date">
                         14
                         <span>Апреля</span>
@@ -91,7 +91,7 @@ if ($access != 1) exit();
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="item" data-href="?page=one_news">
+                <div class="item" href="?page=one_news">
                     <div class="date">
                         25
                         <span>Апреля</span>
@@ -113,7 +113,7 @@ if ($access != 1) exit();
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="item" data-href="?page=one_news">
+                <div class="item" href="?page=one_news">
                     <div class="date">
                         28
                         <span>Апреля</span>

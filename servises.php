@@ -19,7 +19,11 @@ include_once("slider.php");
             </div>
             <div class="col-sm-8 less_margin_top">
                 <?
-                $ImageArray = array( "servese_1.png", "servese_2.png", "servese_3.png" );
+                $ImageArray = array(
+                    array( href => "servese_1.png", width => "500", height => "300"),
+                    array( href => "servese_2_2.png", width => "260", height => "300"),
+                    array( href => "servese_3_2.png", width => "418", height => "300")
+                );
                 echo slider($ImageArray);
                 ?>
             </div>
@@ -30,9 +34,13 @@ include_once("slider.php");
     <div class="container">
         <h1>Инженерные решения</h1>
         <div class="row">
-            <div class="col-sm-8 less_margin_top">
+            <div class="col-sm-8 less_margin_top text-right">
                 <?
-                $ImageArray = array( "servese_2.png", "servese_1.png", "servese_3.png" );
+                $ImageArray = array(
+                    array( href => "servese_2_2.png", width => "260", height => "300"),
+                    array( href => "servese_1.png", width => "500", height => "300"),
+                    array( href => "servese_3_2.png", width => "418", height => "300")
+                );
                 echo slider($ImageArray);
                 ?>
             </div>
@@ -67,7 +75,11 @@ include_once("slider.php");
             </div>
             <div class="col-sm-8 less_margin_top">
                 <?
-                $ImageArray = array( "servese_3.png", "servese_1.png", "servese_2.png" );
+                $ImageArray = array(
+                    array( href => "servese_3_2.png", width => "418", height => "300"),
+                    array( href => "servese_1.png", width => "500", height => "300"),
+                    array( href => "servese_2_2.png", width => "260", height => "300")
+                );
                 echo slider($ImageArray);
                 ?>
             </div>
@@ -78,9 +90,13 @@ include_once("slider.php");
     <div class="container">
         <h1>Производство</h1>
         <div class="row">
-            <div class="col-sm-8 less_margin_top">
+            <div class="col-sm-8 less_margin_top text-right">
                 <?
-                $ImageArray = array( "servese_1.png", "servese_2.png", "servese_3.png" );
+                $ImageArray = array(
+                    array( href => "servese_1.png", width => "500", height => "300"),
+                    array( href => "servese_2_2.png", width => "260", height => "300"),
+                    array( href => "servese_3_2.png", width => "418", height => "300")
+                );
                 echo slider($ImageArray);
                 ?>
             </div>
@@ -115,7 +131,11 @@ include_once("slider.php");
             </div>
             <div class="col-sm-8 less_margin_top">
                 <?
-                $ImageArray = array( "servese_2.png", "servese_1.png", "servese_3.png" );
+                $ImageArray = array(
+                    array( href => "servese_2_2.png", width => "260", height => "300"),
+                    array( href => "servese_1.png", width => "500", height => "300"),
+                    array( href => "servese_3_2.png", width => "418", height => "300")
+                );
                 echo slider($ImageArray);
                 ?>
             </div>

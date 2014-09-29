@@ -1,9 +1,9 @@
 <?php
 ?>
 <div class="block contact_block">
-    <div class="hr"></div>
-    <h1 class="noline">Связаться с нами</h1>
     <form id="contact_form" method="post" action="?page=contact_form">
+        <div class="hr"></div>
+        <h1 class="noline">Связаться с нами</h1>
         <p class="nessesary">* - Обязательные поля</p>
         <p class="notify">Заполните форму и мы свяжемся с Вами в течении суток</p>
         <div class="input string">
@@ -19,7 +19,7 @@
             <span class="nessesary_input"></span>
         </div>
         <div class="actions">
-            <input class="input_submit" type="submit" value="отправить заявку">
+            <button class="input_submit" type="submit">отправить заявку<span class="after"></span></button>
         </div>
     </form>
 </div>
