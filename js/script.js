@@ -14,7 +14,6 @@ var urlParams;
 // --
 var border;
 var header;
-var footer;
 var body;
 var legend;
 var menu;
@@ -22,23 +21,21 @@ var news_items;
 var portfolio_headers;
 var legendOffset = 0;
 var menuOffset = 0;
-var footerOffset = 0;
 var fancybox_options = {
     maxWidth	: $(window).width(),
-    maxHeight	: $(window).height(),
+    maxHeight	: $(window).height() - 20,
     type        : 'ajax',
     fitToView	: false,
     autoSize	: true,
-    //scrollOutside: false,
     closeClick	: false,
-    padding     : [20, 20, 70, 20],
+    padding     : [20, 0, 0, 70],
     margin      : [0, 60, 0, 60],
     arrows      : true,
     openEffect	: 'elastic',
     closeEffect	: 'elastic',
     openMethod	: 'changeIn',
     //closeMethod	: 'changeOut',
-    helpers:  {overlay : {locked     : false}},
+    helpers:  {overlay : {locked     : true}},
     afterLoad   : afterLoad,
     afterShow   : afterShow,
     beforeClose : beforeClose,
@@ -48,7 +45,6 @@ var fancybox_options = {
 $(document).ready(function() {
     border = $(".bordered");
     header = $("#header");
-    footer = $("#footer > .container");
     body = $("body");
     portfolio_headers = $(".portfolio_part");
 
@@ -58,7 +54,6 @@ $(document).ready(function() {
 
     if ($(window).height() >= 560) {
         body.addClass("active");
-        footerOffset = parseInt(footer.css("top"));
         portfolio_headers.each(function () {
             var offset = $(window).height()*0.75;
             $(this).data("offset", offset);
@@ -108,7 +103,7 @@ $(document).ready(function() {
         }
     });
 */
-    news_items.attr('rel', 'gallery').fancybox(fancybox_options);
+    news_items.fancybox(fancybox_options);
 
     news_items.find(".background_image img").each(function() {
         var bg_image = $(this);
@@ -140,8 +135,52 @@ $(document).ready(function() {
     $("a.popup").on("click", function(e) {
         e.preventDefault();
         open_popup($(this).attr("href"));
-    })
+    });
 
+    $("#news .more_button a").on('mouseenter', function(e) {
+        e.preventDefault();
+        var $this = $(this).closest(".more_button");
+        var page = $(this).data('page') !== undefined ? parseInt($(this).data('page')) + 1 : 1;
+        $(this).data('page', page);
+        $.ajax({
+            url: window.location.href,
+            data: "page="+page,
+            type: "html",
+            success: function(data) {
+                var items_wrapper = $(data).find("#news .row").addClass("page_"+page).hide();
+                $this.before(items_wrapper);
+                $("#news .page_" +page).slideDown(500);
+                var items = $("#news .page_" +page+" .item");
+                var max_h = 0;
+                items.each(function() {
+                    if ($(this).outerHeight() > max_h) {
+                        max_h = $(this).outerHeight();
+                    }
+                });
+                items.css({height:max_h});
+                items.fancybox(fancybox_options);
+                items.find(".background_image img").each(function() {
+                    var bg_image = $(this);
+                    bg_image.closest(".item").on("mousemove", function(event) {
+                        var offset_left = bg_image.parent().offset().left;
+                        var offset_top = bg_image.parent().offset().top;
+                        var width = bg_image.parent().width();
+                        var height = bg_image.parent().height();
+                        var bg_def_width = bg_image.width() - width;
+                        var bg_def_height = bg_image.height() - height;
+                        //console.log({left:-(event.pageX - offset_left + 0.5), offsetLeft:offset_left, eventLeft: event.pageX});
+                        //console.log({top:-(event.pageY - offset_top), offsetTop:offset_top, eventTop: event.pageY});
+                        bg_image.css({
+                            marginLeft : -(event.pageX - offset_left + 0.5) * bg_def_width / width,
+                            marginTop : -(event.pageY - offset_top) * bg_def_height / height,
+                            marginRight : 0,
+                            marginBottom : 0
+                        });
+                    });
+                });
+            }
+        })
+    });
 });
 
 $(window).resize(resize);
@@ -213,10 +252,6 @@ function scrolling(nextScrollTop) {
                     header.find(".image").css({marginTop: - offset});
                 }
             })
-        }
-        var footerTop = footer.parent().offset().top;
-        if (nextScrollTop <= footerTop) {
-            footer.css("top", nextScrollTop - footerTop + 8);
         }
     }
 }

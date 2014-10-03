@@ -69,6 +69,8 @@ if ($access != 1) exit();
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-sm-4">
                 <div class="item" href="?page=one_news">
                     <div class="date">
