@@ -12,6 +12,5 @@ $page = isset($_GET['page']) ? $_GET['page'] : "main";
         </div>
     <? require("footer.php"); ?>
     <? require("resourses.php"); ?>
-    <? require("popup.php"); ?>
 	</body>
 </html>

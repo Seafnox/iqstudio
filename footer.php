@@ -2,7 +2,7 @@
 if ($access != 1) exit();
 ?>
 <section id="connecntion">
-    <div class="connect_link"><a href="?page=contacts">Связаться с нами</a></div>
+    <div class="connect_link"><a href="?page=contact_form" class="popup">Связаться с нами</a></div>
 </section>
 <footer id="footer">
     <div class="container">
@@ -23,7 +23,7 @@ if ($access != 1) exit();
             <div class="col-sm-4">
                 <h2>Контакты</h2>
                 <div class="location">
-                    <span>Россия</span>
+                    <span><a href="?page=contacts">Россия</a></span>
                     385002, Москва <br>
                     ул. Ак. Королева д.34, а/я 54
                 </div>
@@ -43,7 +43,7 @@ if ($access != 1) exit();
             <div class="col-sm-4">
                 <h2>&nbsp;</h2>
                 <div class="location">
-                    <span>Англия</span>
+                    <span><a href="?page=contacts">Англия</a></span>
                     385002, Москва <br>
                     ул. Ак. Королева д.34, а/я 54
                 </div>

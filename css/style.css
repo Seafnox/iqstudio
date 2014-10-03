@@ -191,6 +191,7 @@ body section * {
     left:0;
     top:0;
     color: #FFFFFF;
+    z-index: 1;
 }
 #header * {
     -webkit-transition: all 0.5s;
@@ -1249,7 +1250,7 @@ body section * {
     right:0;
     bottom:0;
     opacity:0;
-    margin-bottom:-10px;
+    margin-bottom:-12px;
     height:3px;
     background:#FFF;
     -webkit-transition: all 0.5s;
@@ -1260,7 +1261,7 @@ body section * {
 }
 #footer a:hover:after {
     opacity:1;
-    margin-bottom:0px;
+    margin-bottom:-2px;
 }
 #footer .logo {
     margin-bottom: 20px;

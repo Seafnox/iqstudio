@@ -19,6 +19,7 @@ if ($access != 1) exit();
     <script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU"></script>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.reject.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>

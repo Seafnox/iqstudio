@@ -43,6 +43,7 @@ var fancybox_options = {
 };
 
 $(document).ready(function() {
+    $('input, textarea').placeholder();
     border = $(".bordered");
     header = $("#header");
     body = $("body");
@@ -382,6 +383,7 @@ function open_popup(href) {
 }
 
 function afterShow() {
+    $('.fancybox-outer input, .fancybox-outer textarea').placeholder();
     validation($(".fancybox-outer"));
     sliding($(".fancybox-outer"));
 }
