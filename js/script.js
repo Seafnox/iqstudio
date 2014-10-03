@@ -138,6 +138,9 @@ $(document).ready(function() {
         open_popup($(this).attr("href"));
     });
 
+    $("#news .more_button a").on('click', function(e) {
+        e.preventDefault();
+    });
     $("#news .more_button a").on('mouseenter', function(e) {
         e.preventDefault();
         var $this = $(this).closest(".more_button");
