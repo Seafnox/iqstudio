@@ -7,11 +7,11 @@
         <p class="nessesary">* - Обязательные поля</p>
         <p class="notify">Заполните форму и мы свяжемся с Вами в течении суток</p>
         <div class="input string">
-            <input name="name" id="input_name" placeholder="Имя" class="input_text" type="text">
-            <span class="nessesary_input"></span>
+            <input name="name" id="input_name" placeholder="Имя" class="input_text" type="text" required="required" >
+            <span class="nessesary_input">*</span>
         </div>
         <div class="input string">
-            <input name="phone" id="input_phone" placeholder="Телефон" class="input_text" type="tel" required="required">
+            <input name="phone" id="input_phone" placeholder="Почта или телефон" class="input_text" type="tel" required="required">
             <span class="nessesary_input">*</span>
         </div>
         <div class="input string">

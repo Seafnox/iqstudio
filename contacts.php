@@ -1,7 +1,7 @@
 <?php
 if ($access != 1) exit();
 ?>
-<div class="block contact_block">
+<div class="block contact_block" id="contacts_rus">
     <div class="row">
         <div class="col-sm-3">
             <h1 class="noline">Россия</h1>
@@ -17,17 +17,17 @@ if ($access != 1) exit();
                 <a href="?page=contact_form" class="popup">связаться</a>
             </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-offset-1 col-sm-8">
             <div class="map" data-address="г. Москва, ул. Ак. Королева д.34"></div>
         </div>
     </div>
 </div>
-<div class="block contact_block">
+<div class="block contact_block" id="contacts_eng">
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col-sm-8">
             <div class="map" data-address="г. Москва, ул. Ак. Королева д.34"></div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-offset-1 col-sm-3">
             <h1 class="noline">Англия</h1>
             <p class="header">Адрес:</p>
             <p>385002, Москва

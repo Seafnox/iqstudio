@@ -25,7 +25,8 @@ if ($access != 1) exit();
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.reject.css" rel="stylesheet">
     <link href="css/jquery.fancybox.css" rel="stylesheet">
-    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/jquery.jscrollpane.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lte IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

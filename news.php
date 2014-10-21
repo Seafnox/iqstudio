@@ -41,10 +41,10 @@ if ($access != 1) exit();
                         знать об окружающей среде.
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg" alt="iqstudio">
+                        <img src="img/news/news_2.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
+                        <img src="img/news_bg/news_bg_2.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ if ($access != 1) exit();
                         <img src="img/news/news_1.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
+                        <img src="img/news_bg/news_bg_3.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@ if ($access != 1) exit();
                         строительство нескольких станции железной дороги в Инсбруке
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg" alt="iqstudio">
+                        <img src="img/news/news_2.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
                         <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
@@ -110,7 +110,7 @@ if ($access != 1) exit();
                         <img src="img/news/news_1.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
+                        <img src="img/news_bg/news_bg_2.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
@@ -128,10 +128,10 @@ if ($access != 1) exit();
                         строительство нескольких станции железной дороги в Инсбруке
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg" alt="iqstudio">
+                        <img src="img/news/news_2.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
+                        <img src="img/news_bg/news_bg_3.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 <?php
 ?>
 <div class="block news_block">
+    <div class="date">24 Апреля 2014</div>
+    <div class="hr"></div>
     <h1 class="noline">The European languages</h1>
     <p>
         The European languages are members of the same family. Their separate existence is a myth. For science, music,
@@ -29,4 +31,30 @@
         seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European
         languages are members of the same family. Their separate existence is a myth.
     </p>
+
+    <div class="soc_block">
+        <a href="#" class="soc_link fb">Facebook</a>
+        <a href="#" class="soc_link be">Be</a>
+        <a href="#" class="soc_link pt">Pintest</a>
+    </div>
+    <div class="nearly_news">
+        <a class="prev popup" href="?page=one_news">
+            <span class="image">
+                <img src="img/news/news_1.jpg">
+            </span>
+            <span class="description">
+                <span class="text">Предыдущая статья:</span>
+                <span class="name">Prada Needs You: The Search Is On</span>
+            </span>
+        </a>
+        <a class="next popup" href="?page=one_news">
+            <span class="image">
+                <img src="img/news/news_2.jpg">
+            </span>
+            <span class="description">
+                <span class="text">Следующая статья:</span>
+                <span class="name">M&S Vs The Victoria's Secret Knicker Queen</span>
+            </span>
+        </a>
+    </div>
 </div>

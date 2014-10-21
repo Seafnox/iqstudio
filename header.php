@@ -2,7 +2,6 @@
 if ($access != 1) exit();
 ?>
 <header id="header">
-    <div class="down_arrow"><a href="#down"></a></div>
 </header>
 <div class="bordered">
     <h1 class="line"><span><a href="/"><img src="img/logo.png" width="560" height="48" alt="VALEEV & RAY" title="VALEEV & RAY"></a></span><span class="hidden"><a href="/">VALEEV & RAY</a></span></h1>
@@ -18,5 +17,6 @@ if ($access != 1) exit();
             <li class="show_menu"><a href="#">Меню</a></li>
         </ul>
     </nav>
+    <div class="down_arrow"><a href="#down"></a></div>
     <div class="language"><a href="#">In English</a></div>
 </div>

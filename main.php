@@ -4,121 +4,126 @@ if ($access != 1) exit();
 <section id="index_portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
-                <div class="item">
-                    <div class="image">
+            <div class="col-sm-4 sizer"></div>
+            <div class="col-sm-4 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
+                        <img src="img/portfolio_index/portfolio_index_2.jpg" alt="iqstudio">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
+                            <span class="tag">Частный проект</span>
+                            <span class="tag">Дизайн, проектирование</span>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-4 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
+                        <img src="img/portfolio_index/portfolio_index_3.jpg" alt="iqstudio">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
+                            <span class="tag">Частный проект</span>
+                            <span class="tag">Дизайн, проектирование</span>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+            </a>
+            </div>
+            <div class="col-sm-4 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
+                        <img src="img/portfolio_index/portfolio_index_4.jpg" alt="iqstudio">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
+                            <span class="tag">Частный проект</span>
+                            <span class="tag">Дизайн, проектирование</span>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-8 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
                         <img src="img/portfolio_index/portfolio_index_1.jpg" alt="iqstudio">
-                    </div>
-                    <div class="description">
-                        <h1>Дизайн интерьров</h1>
-                        <div class="taglist">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
                             <span class="tag">Частный проект</span>
                             <span class="tag">Дизайн, проектирование</span>
-                        </div>
-                        <div class="more_button"><a href="#">Подробнее</a></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/portfolio_index/portfolio_index_2.jpg" alt="iqstudio">
-                            </div>
-                            <div class="description">
-                                <h1>Дизайн интерьров</h1>
-                                <div class="taglist">
-                                    <span class="tag">Частный проект</span>
-                                    <span class="tag">Дизайн, проектирование</span>
-                                </div>
-                                <div class="more_button"><a href="#">Подробнее</a></div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/portfolio_index/portfolio_index_3.jpg" alt="iqstudio">
-                            </div>
-                            <div class="description">
-                                <h1>Дизайн интерьров</h1>
-                                <div class="taglist">
-                                    <span class="tag">Частный проект</span>
-                                    <span class="tag">Дизайн, проектирование</span>
-                                </div>
-                                <div class="more_button"><a href="#">Подробнее</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/portfolio_index/portfolio_index_4.jpg" alt="iqstudio">
-                            </div>
-                            <div class="description">
-                                <h1>Дизайн интерьров</h1>
-                                <div class="taglist">
-                                    <span class="tag">Частный проект</span>
-                                    <span class="tag">Дизайн, проектирование</span>
-                                </div>
-                                <div class="more_button"><a href="#">Подробнее</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
             </div>
-            <div class="col-sm-4">
-                <div class="item">
-                    <div class="image">
+            <div class="col-sm-4 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
                         <img src="img/portfolio_index/portfolio_index_5.jpg" alt="iqstudio">
-                    </div>
-                    <div class="description">
-                        <h1>Дизайн интерьров</h1>
-                        <div class="taglist">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
                             <span class="tag">Частный проект</span>
                             <span class="tag">Дизайн, проектирование</span>
-                        </div>
-                        <div class="more_button"><a href="#">Подробнее</a></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_6.jpg" alt="iqstudio">
-                    </div>
-                    <div class="description">
-                        <h1>Дизайн интерьров</h1>
-                        <div class="taglist">
-                            <span class="tag">Частный проект</span>
-                            <span class="tag">Дизайн, проектирование</span>
-                        </div>
-                        <div class="more_button"><a href="#">Подробнее</a></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_7.jpg" alt="iqstudio">
-                    </div>
-                    <div class="description">
-                        <h1>Дизайн интерьров</h1>
-                        <div class="taglist">
-                            <span class="tag">Частный проект</span>
-                            <span class="tag">Дизайн, проектирование</span>
-                        </div>
-                        <div class="more_button"><a href="#">Подробнее</a></div>
-                    </div>
-                </div>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
             </div>
-            <div class="col-sm-12">
-                <div class="item">
-                    <div class="image">
-                        <img src="img/portfolio_index/portfolio_index_8.jpg" alt="iqstudio">
-                    </div>
-                    <div class="description">
-                        <h1>Дизайн интерьров</h1>
-                        <div class="taglist">
+            <div class="col-sm-4 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
+                        <img src="img/portfolio_index/portfolio_index_6.jpg" alt="iqstudio">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
                             <span class="tag">Частный проект</span>
                             <span class="tag">Дизайн, проектирование</span>
-                        </div>
-                        <div class="more_button"><a href="#">Подробнее</a></div>
-                    </div>
-                </div>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-4 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
+                        <img src="img/portfolio_index/portfolio_index_7.jpg" alt="iqstudio">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
+                            <span class="tag">Частный проект</span>
+                            <span class="tag">Дизайн, проектирование</span>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-12 item_wrapper">
+                <a class="item" href="?page=portfolio">
+                    <span class="image">
+                        <img src="img/portfolio_index/portfolio_index_8.jpg" alt="iqstudio">
+                    </span>
+                    <span class="description">
+                        <span class="h1">Дизайн интерьров</span>
+                        <span class="taglist">
+                            <span class="tag">Частный проект</span>
+                            <span class="tag">Дизайн, проектирование</span>
+                        </span>
+                        <span class="more_button"><span>Подробнее</span></span>
+                    </span>
+                </a>
             </div>
         </div>
     </div>
@@ -163,10 +168,10 @@ if ($access != 1) exit();
                         знать об окружающей среде.
                     </div>
                     <div class="image">
-                        <img src="img/news/news_1.jpg" alt="iqstudio">
+                        <img src="img/news/news_2.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
+                        <img src="img/news_bg/news_bg_2.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>
@@ -187,7 +192,7 @@ if ($access != 1) exit();
                         <img src="img/news/news_1.jpg" alt="iqstudio">
                     </div>
                     <div class="background_image">
-                        <img src="img/news_bg/news_bg_1.jpg" alt="iqstudio">
+                        <img src="img/news_bg/news_bg_3.jpg" alt="iqstudio">
                     </div>
                 </div>
             </div>

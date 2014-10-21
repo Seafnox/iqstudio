@@ -1,4 +1,6 @@
-html {height:100%;}
+html {
+    height:100%;
+}
 body {
     height: 100%;
     min-height: 100%;
@@ -50,6 +52,10 @@ h4 {
     margin-bottom: 35px;
     color:#808080;
 }
+.date {
+    font-family: "Museo Sans Cyrl 700";
+    margin-top: 30px;
+}
 .lead {
     font-family: "Museo Sans Cyrl 500 Italic";
     font-style: normal;
@@ -66,6 +72,7 @@ h4 {
     line-height: 15px;
     color: #9a9a9a;
     margin: 20px 0;
+    text-transform: uppercase;
 }
 .bold {
     font-family: "Museo Sans Cyrl 700";
@@ -82,11 +89,13 @@ ol {
     font-size: 14px;
     line-height: 35px;
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 ol ol {
     color: #666666;
     line-height: 30px;
     margin-bottom: 15px;
+    text-transform: none;
 }
 ol li {
     padding-left: 30px;
@@ -111,11 +120,13 @@ ul {
     font-size: 14px;
     line-height: 35px;
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 ul ul {
     color: #666666;
     line-height: 30px;
     margin-bottom: 15px;
+    text-transform: none;
 }
 ul li {
     padding-left: 30px;
@@ -169,6 +180,8 @@ hr.small {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
+    position: relative;
 }
 .more_button a:hover:after {
     margin-left:20px;
@@ -180,6 +193,17 @@ hr.small {
     right:100%;
     width:100%;
 }
+
+.row {
+    margin: 0 -20px;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4,
+.col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    padding: 0 20px;
+}
+
+
 body section * {
 }
 #header {
@@ -191,7 +215,7 @@ body section * {
     left:0;
     top:0;
     color: #FFFFFF;
-    z-index: 1;
+    z-index: 10;
 }
 #header * {
     -webkit-transition: all 0.5s;
@@ -200,21 +224,11 @@ body section * {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-#header .down_arrow {
-    opacity: 0;
-    position: absolute;
-    left:0;
-    right:0;
-    bottom: 70px;
-    text-align: center;
-    z-index: 3;
-}
-#header .down_arrow a {
-    display: inline-block;
-    background: url("../img/down.png") no-repeat 0 0;
-    width:30px;
-    height:30px;
-    text-decoration: none;
+
+#body {
+    width: 100%;
+    min-width: 1010px;
+    height: 100%;
 }
 
 .main #header {
@@ -224,7 +238,9 @@ body section * {
     background: url("../img/header/about_1900.jpg") repeat-y 50% 0;
 }
 .portfolio #header {
-    background: url("../img/header/works_1900.jpg") repeat-y 50% 0;
+    height: 0;
+    min-height: 0;
+    margin-bottom: -170px;
 }
 .servises #header {
     background: url("../img/header/works_1900.jpg") repeat-y 50% 0;
@@ -236,10 +252,25 @@ body section * {
     background: url("../img/header/index_1900.jpg") repeat-y 50% 0;
 }
 
-.top #header .down_arrow {
+.bordered .down_arrow {
+    opacity: 0;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 70px;
+    text-align: center;
+    z-index: 20;
+}
+.bordered .down_arrow a {
+    display: inline-block;
+    background: url("../img/down.png") no-repeat 0 0;
+    width:30px;
+    height:30px;
+    text-decoration: none;
+}
+.top .bordered .down_arrow {
     opacity: 1;
 }
-
 .bordered {
     width:100%;
     min-height: 560px;
@@ -254,7 +285,7 @@ body section * {
     text-align: center;
     top: 0px;
     left:0px;
-    z-index: 5;
+    z-index: 30;
 }
 .bordered * {
     -webkit-transition: all 0.5s;
@@ -270,7 +301,7 @@ body section * {
     top: 50px;
     bottom: 50px;
     background: #FFFFFF;
-    z-index: 1;
+    z-index: 10;
 }
 .bordered .right_line {
     position: absolute;
@@ -279,7 +310,7 @@ body section * {
     top: 50px;
     bottom: 50px;
     background: #FFFFFF;
-    z-index: 1;
+    z-index: 10;
 }
 .bordered h1 {
     position: relative;
@@ -306,23 +337,20 @@ body section * {
     width: 100%;
     height: 9px;
     background: #FFFFFF;
-    z-index: -1;
-    position: relative;
     vertical-align: top;
-    top: 20px;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+    z-index: 0;
+    margin: 20px 20px 0 20px;
 }
 .bordered .line:before {
-    right: 20px;
-    margin: 0 0 0 -100%;
+    margin-left: -100%;
 }
 .bordered .line:after {
-    left: 20px;
-    margin: 0 -100% 0 0;
+    margin-right: -100%;
 }
 .bordered .line span {
     display: inline-block;
@@ -351,9 +379,30 @@ body section * {
     text-decoration: none;
     border-bottom: 0;
     color: inherit;
+    position:relative;
 }
-.bordered .language a:hover {
-    border-bottom: 2px solid;
+.bordered .language a:after {
+    display:block;
+    content:"";
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+    margin-bottom:-10px;
+    height:3px;
+    background:#FFF;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 0;
+
+}
+.bordered .language a:hover:after {
+    opacity:1;
+    margin-bottom:-2px;
 }
 .bordered .navbar {
     height: auto;
@@ -362,7 +411,7 @@ body section * {
 .bordered .navbar {
     top: 110px;
     top: 50%;
-    z-index:1;
+    z-index:10;
     left: 0;
     right: 0;
     position: absolute;
@@ -421,6 +470,7 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
 }
 .bordered .navbar a:hover:after {
 	opacity:1;
@@ -454,7 +504,7 @@ body section * {
 .active .bordered .language,
 .active .bordered .navbar {
     position: fixed;
-    z-index: 3;
+    z-index: 20;
 }
 
 .top .bordered .line:before {
@@ -469,7 +519,7 @@ body section * {
     padding-top: 170px;
     padding-bottom:70px;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 #content:before, #content:after {
     content: "";
@@ -488,16 +538,25 @@ body section * {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+#index_portfolio .row {
+    position: relative;
+}
 #index_portfolio .item {
+    display: block;
     width: 100%;
     position: relative;
-    margin-bottom:30px;
+    margin-bottom:40px;
+    color: #292929;
+}
+#index_portfolio .item .image {
+    display: block;
 }
 #index_portfolio .item .image img {
     display: block;
     width: 100%;
 }
 #index_portfolio .item .description {
+    display: block;
     opacity: 0;
     position: absolute;
     left: 0;
@@ -512,9 +571,18 @@ body section * {
 #index_portfolio .item:hover .description {
     opacity: 1;
 }
-#index_portfolio .item .description h1 {
+#index_portfolio .item .description .h1 {
+    display: block;
+    font-family: "Museo Sans Cyrl 900";
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #000;
     font-size: 21px;
     line-height: 30px;
+}
+#index_portfolio .item .description .taglist {
+    display: block;
 }
 #index_portfolio .item .description .tag {
     display: block;
@@ -530,15 +598,39 @@ body section * {
     content: "";
 }
 #index_portfolio .item .description .more_button {
+    display: block;
     position: absolute;
     bottom: 30px;
     left: 40px;
 }
-#index_portfolio .item .description .more_button a {
+#index_portfolio .item .description .more_button span {
+    position: relative;
+    display: inline-block;
+    color: #292929;
     border:0;
     line-height: 24px;
     font-size: 14px;
     width: auto;
+}
+#index_portfolio .item .description .more_button span:after {
+    display: inline-block;
+    content: "";
+    background: url("../img/right.png") no-repeat 0 50%;
+    width: 28px;
+    margin-left:10px;
+    margin-bottom: -2px;
+    height: 11px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 0;
+    position: relative;
+}
+#index_portfolio .item:hover .description .more_button span:after {
+    margin-left:20px;
+    margin-right:-10px;
 }
 
 #index_news .more_button {
@@ -579,16 +671,19 @@ body section * {
     background: #292929;
     height:2px;
     opacity: 0;
-    left:0;
-    bottom:10px;
-    margin:0;
-    width:100%;
+    left: 40px;
+    right: 0;
+    bottom: 10px;
+    margin: 0;
+    width: auto;
     margin-bottom: -10px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
+
 }
 #news .more_button a:before {
     display: inline-block;
@@ -603,12 +698,14 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
+    position: relative;
 }
 #news .more_button a:hover:before {
-    -webkit-transform: rotate(-360deg);
-    -moz-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
 }
 #news .more_button a:hover:after {
     margin-bottom:0;
@@ -624,15 +721,15 @@ body section * {
     position: relative;
 }
 .news_block .item {
-    padding: 78px 55px 250px;
+    padding: 78px 55px 270px;
     overflow: hidden;
     background: #FFF;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
     cursor: pointer;
 }
 .news_block .item * {
-    z-index: 2;
+    z-index: 15;
     position: relative;
 }
 .news_block .item .background_image {
@@ -643,7 +740,7 @@ body section * {
     top: 0;
     bottom: 0;
     position: absolute;
-    z-index: 0;
+    z-index: 5;
     overflow: hidden;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -655,7 +752,7 @@ body section * {
      opacity: 0.3;
 }
 .news_block .item .background_image img {
-    z-index: 0;
+    z-index: 5;
     display: inline-block;
     width: 200%;
 }
@@ -730,6 +827,7 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
 }
 .soc_block .soc_link:hover:after {
     opacity:1;
@@ -764,6 +862,10 @@ body section * {
     width: 35%;
     padding: 15px 0;
     text-decoration: none;
+}
+.nearly_news .prev:hover, .nearly_news .next:hover {
+    text-decoration: underline;
+    color: inherit;
 }
 .nearly_news .next {
     float: right;
@@ -805,13 +907,32 @@ body section * {
     font-size: 15px;
 }
 
-
 .block {
     margin: 0 65px;
     margin-bottom: 105px;
     font-size: 15px;
     line-height: 24px;
 }
+.block a {
+    color: inherit;
+}
+.block a.link {
+    position: relative;
+    text-decoration: none;
+}
+.block a.link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    content: "";
+    height: 2px;
+    background: #292929;
+}
+.block a.link:hover:after {
+     display: none;
+ }
 .block h1 {
     margin-top:45px;
     margin-bottom: 55px;
@@ -854,12 +975,15 @@ body section * {
     margin-bottom: 20px;
 }
 .block .face1 {
-    background: url("../img/face1.png") no-repeat 100% 200px;
+    background: url("../img/about/face1_1900.png") no-repeat 100% 200px;
     min-height: 1020px;
+    margin-right: 20px;
+    padding-top: 30px;
 }
 .block .face2 {
-    background: url("../img/face2.png") no-repeat 0 460px;
+    background: url("../img/about/face2_1900.png") no-repeat 0 460px;
     min-height: 1280px;
+    margin-left: 20px;
 }
 .block .header {
     font-family: "Museo Sans Cyrl 700";
@@ -902,6 +1026,9 @@ body section * {
     max-width: 100%;
 }
 
+.about_block {
+    font-family: "Museo Sans Cyrl 500";
+}
 .about_block h3 {
     font-family: "Museo Sans Cyrl 700";
     font-style: normal;
@@ -915,15 +1042,34 @@ body section * {
 }
 
 .contact_block .row {
-    margin-bottom:70px;
+    margin-bottom: 170px;
 }
+.contact_block h1 {
+    margin-top: 20px;
+    margin-bottom: 38px;
+    font-size: 60px;
+    letter-spacing: 5.5px;
+}
+.contact_block p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.contact_block .header {
+    font-family: "Museo Sans Cyrl 900";
+    margin-top: 27px;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
 .contact_block .more_button {
-    margin-top:30px;
+    margin-top: 28px;
+    font-size: 15px;
 }
 .contact_block .more_button a {
-    width: 200px;
-    height: 60px;
-    line-height: 50px;
+    width: 175px;
+    height: 46px;
+    line-height: 40px;
 }
 .contact_block .more_button a:after {
     opacity:0;
@@ -932,11 +1078,11 @@ body section * {
 }
 .contact_block .more_button a:hover:after {
     opacity:1;
-    margin-right: -40px;
+    margin-right: -10px;
 }
 
 .portfolio_block .row {
-    margin-bottom:70px;
+    padding-bottom:70px;
 }
 .portfolio_block .slider_wrapper {
     margin: 50px;
@@ -947,14 +1093,24 @@ body section * {
     border: 3px solid #292929;
     left:-50px;
     top:-50px;
-    right:50%;
-    bottom: -70px;
+    width: 360px;
+    bottom: -45px;
     content:"";
 }
+.portfolio_block .image_wrapper {
+    float:left;
+}
+.portfolio_block .text-right .image_wrapper {
+    float:right;
+}
+.portfolio_block .text-center .image_wrapper {
+    float: none;
+}
+
 .portfolio_part {
     height: 560px;
-    margin-bottom:70px;
     position: relative;
+    margin-bottom:70px;
 }
 .portfolio_part .image {
     top:0;
@@ -962,7 +1118,7 @@ body section * {
     width:100%;
     height:100%;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
 }
 .portfolio_part .description {
     padding: 0 65px;
@@ -970,11 +1126,14 @@ body section * {
     left: 16.6%;
     width: 50%;
     top: 25%;
-    z-index: 2;
+    z-index: 15;
     color: #000000;
 }
 .portfolio_part .description h1{
     color: #000000;
+}
+.portfolio_part.part_0 .image {
+    background: url("../img/portfolio/header/0_1900.jpg");
 }
 .portfolio_part.part_1 .image {
     background: url("../img/portfolio/header/1_1900.jpg");
@@ -992,29 +1151,34 @@ body section * {
     content: "";
     clear: both;
 }
+.slider_wrapper .buttons {
+    width: 275px;
+}
 .slider_wrapper .prev {
     position: relative;
     float: left;
     display: block;
-    background: url("../img/slide_arrows.png") no-repeat 0 50%;
-    width:8px;
+    background: url("../img/slide_arrows.png") no-repeat 11px 50%;
+    width:30px;
     height: 24px;
 }
 .slider_wrapper .next {
     position: relative;
     float: left;
     display: block;
-    margin-left:40px;
-    background: url("../img/slide_arrows.png") no-repeat -51px 50%;
-    width:8px;
+    margin-left:10px;
+    background: url("../img/slide_arrows.png") no-repeat -40px 50%;
+    width:30px;
     height: 24px;
 }
 .slider_wrapper .pagenumber {
-    font-family: "Museo Sans Cyrl 900";
+    font-family: "Museo Sans Cyrl 700";
     letter-spacing: 3px;
     float: left;
     clear: left;
-    width: 100px;
+    width: 200px;
+    line-height: 22px;
+    font-size: 18px;
 }
 .text-right .slider_wrapper .buttons {
     float: right;
@@ -1023,8 +1187,9 @@ body section * {
 
 
 .slider_wrapper.big_slider_wrapper {
-    padding: 0 40px;
+    padding: 0 60px;
     margin-bottom: 90px;
+	margin-right:5px;
 }
 .slider_wrapper.big_slider_wrapper .prev {
     display: block;
@@ -1033,7 +1198,7 @@ body section * {
     top:0;
     background: url("../img/big_slide_arrows.png") no-repeat 7px 50%;
     width:36px;
-    height: 100%;
+    height: 90%;
 }
 .slider_wrapper.big_slider_wrapper .next {
     display: block;
@@ -1042,7 +1207,7 @@ body section * {
     top:0;
     background: url("../img/big_slide_arrows.png") no-repeat -27px 50%;
     width:36px;
-    height: 100%;
+    height: 90%;
 }
 .slider_wrapper.big_slider_wrapper .pagenumber {
     font-family: "Museo Sans Cyrl 500";
@@ -1061,11 +1226,12 @@ body section * {
 }
 .slider_wrapper.big_slider_wrapper .item img {
     width: 100%;
+    height: auto;
 }
 
 .slider {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 .slider .item {
@@ -1076,6 +1242,7 @@ body section * {
     text-align: right;
 }
 .slider .item img {
+    max-width: 100%;
     /*width:100%;*/
 }
 
@@ -1087,6 +1254,7 @@ body section * {
 #contact_form {
     width: 90%;
     margin: 0 auto;
+    padding-top:10px;
 }
 #contact_form .notify {
     font-family: "Museo Sans Cyrl 700";
@@ -1094,6 +1262,27 @@ body section * {
 #contact_form .nessesary {
     float: right;
     font-size:14px;
+}
+#contact_form .placeholded_text {
+    position: absolute;
+    left:40px;
+    top:25px;
+    line-height: 28px;
+    font-family: "Museo Sans Cyrl 500";
+    font-size:16px;
+    color: #AAAAAA;
+    letter-spacing: 0.5;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+#contact_form .placeholded_text.animated {
+    top:10px;
+    font-size:14px;
+    line-height: 14px;
+    color: #292929;
 }
 #contact_form .input.string {
      position: relative;
@@ -1107,18 +1296,29 @@ body section * {
 }
 #contact_form .input.string input {
     width: 100%;
-    height: 50px;
-    line-height: 48px;
-    border:0;
-    background: #DDDDDD;
-    color: #000000;
-    padding: 0 20px;
+    height: 80px;
+    line-height: 28px;
+    font-family: "Museo Sans Cyrl 500";
+    font-size:16px;
+    border: 0;
+    background: #DDD;
+    color: #292929;
+    padding: 25px 40px;
+}
+#contact_form .input.string input.blur {
+    color: #AAAAAA;
 }
 #contact_form .input.string.error input {
     background: #FFDDDD url("../img/exclamation.png") no-repeat 100% 50%;
 }
+#contact_form .input.string.error input:focus {
+    background: #DDD;
+}
 #contact_form .input.string.valid input {
-    background: #ddffdd url("../img/add.png") no-repeat 100% 50%;
+    background: #DDD url("../img/add.png") no-repeat 100% 50%;
+}
+#contact_form .input.string.valid input:focus {
+    background: #DDD;
 }
 #contact_form .input.string.error span {
     display: none;
@@ -1129,12 +1329,17 @@ body section * {
 #contact_form .input.string textarea {
     width: 100%;
     max-width: 100%;
-    height: 100px;
+    height: 140px;
     border:0;
     background: #DDDDDD;
-    color: #000000;
+    color: #292929;
     line-height: 20px;
-    padding: 10px 20px;
+    font-family: "Museo Sans Cyrl 500";
+    font-size:16px;
+    padding: 25px 40px;
+}
+#contact_form .input.string textarea.blur {
+    color: #AAAAAA;
 }
 #contact_form .actions .input_submit {
     background: transparent;
@@ -1144,7 +1349,6 @@ body section * {
     width: 240px;
     height: 50px;
     line-height: 40px;
-    margin-bottom: 70px;
 }
 #contact_form .actions .input_submit:after {
     display: inline-block;
@@ -1161,6 +1365,8 @@ body section * {
     transition: all 0.5s;
     opacity:0;
     margin-right: -30px;
+    z-index: 0;
+    position: relative;
 }
 #contact_form .actions .input_submit:hover:after {
     opacity:1;
@@ -1177,7 +1383,7 @@ body section * {
 
 #connecntion {
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 #connecntion * {
     -webkit-transition: all 0.5s;
@@ -1214,6 +1420,7 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    position: relative;
 }
 #connecntion .connect_link a:hover {
     background: #333333;
@@ -1229,7 +1436,7 @@ body section * {
     position: relative;
     overflow: hidden;
     height:100%;
-    z-index: 0;
+    z-index: -1;
 }
 #footer .container {
     padding-top:275px;
@@ -1258,6 +1465,7 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
 }
 #footer a:hover:after {
     opacity:1;
@@ -1308,6 +1516,7 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
 }
 #footer .soc_link:hover:after {
     opacity:1;
@@ -1357,6 +1566,13 @@ body section * {
     line-height: 32px;
     margin-bottom: 10px;
 }
+#footer .location span a {
+    margin-left: -25px;
+    padding-left: 25px;
+}
+#footer .location span a:after {
+    left: 25px;
+}
 #footer .phone, #footer .fax, #footer .mail {
     font-size: 13px;
     line-height: 24px;
@@ -1400,7 +1616,7 @@ body section * {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.7);
-    z-index: 4;
+    z-index: 35;
     text-align: center;
     font-family: "Museo Sans Cyrl 900";
     font-style: normal;
@@ -1427,6 +1643,7 @@ body section * {
     display: none;
 }
 #fade_menu a {
+    font-family: "Museo Sans Cyrl 700";
     color: inherit;
     background: transparent;
 }
@@ -1451,6 +1668,7 @@ body section * {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 0;
 }
 #fade_menu a:hover span:after {
 	opacity:1;
@@ -1475,19 +1693,56 @@ body section * {
 
 .fancybox-skin {
     margin-bottom: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #FFF;
 }
 .fancybox-close {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    left:20px;
-    top: 20px;
+    left: 40px;
+    top: 40px;
     background: url("../img/fancybox/close_button.jpg") no-repeat 0 0;
 }
 .fancybox-close:hover {
     background-position: 0 0;
 }
+.fancybox-inner .block {
+    padding: 20px 100px;
+}
+.fancybox-inner h1 {
+    font-family: "Museo Sans Cyrl 500";
+}
+.fancybox-inner {
+    overflow-x: hidden !important;
+    /*overflow: visible !important;*/
+}
 
+.jspTrack {
+    background: #CCC;
+}
+.jspDrag {
+    background: #292929;
+}
+.jspVerticalBar {
+    width: 9px;
+}
+.jspHorizontalBar {
+    height: 9px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1260px;
+    }
+    .block {
+        width: 1260px;
+        margin: 0 auto;
+        margin-bottom: 105px;
+    }
+}
 @media (min-width: 1900px) {
     .main #header {
         background: url("../img/header/index_3000.jpg") repeat-y 50% 0;
@@ -1507,6 +1762,9 @@ body section * {
     .contacts #header {
         background: url("../img/header/index_3000.jpg") repeat-y 50% 0;
     }
+    .portfolio_part.part_0 .image {
+        background: url("../img/portfolio/header/0_3000.jpg");
+    }
     .portfolio_part.part_1 .image {
         background: url("../img/portfolio/header/1_3000.jpg");
     }
@@ -1514,23 +1772,330 @@ body section * {
         background: url("../img/portfolio/header/2_3000.jpg");
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 2000px) {
     .container {
-        width: 1280px;
+        width: 1600px;
     }
     .block {
-        width: 1280px;
+        width: 1600px;
         margin: 0 auto;
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 120px;
     }
+
+    body {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    h1 {
+        font-size: 60px;
+        letter-spacing: 0.5px;
+        line-height: 90px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 3.5px;
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 3.5px;
+        margin-top: 90px;
+        margin-bottom: 35px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 3.5px;
+        margin-top: 90px;
+        margin-bottom: 35px;
+    }
+    .lead {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .image_description {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 30px 0;
+    }
+    ol {
+        font-size: 20px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+    ol ol {
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    ul {
+        font-size: 20px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+    ul ul {
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .more_button {
+        font-size: 28px;
+    }
+
+    .bordered .navbar {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .bordered .navbar li {
+        margin: 0 20px;
+    }
+    .bordered .navbar a {
+        font-size: 22px;
+    }
+    .bordered .navbar li.show_menu a {
+        border: 3px solid;
+        width: 200px;
+        margin: -5px 0;
+        line-height: 60px;
+        height: 62px;
+    }
+    .bordered .language a {
+        font-size: 18px;
+    }
+
+    #index_portfolio {
+        margin-bottom: 90px;
+    }
+    #index_portfolio .item .description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #index_portfolio .item .description .h1 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    #index_portfolio .item .description .taglist .tag {
+    }
+    #index_portfolio .item .description .more_button span {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #index_portfolio .item .description .more_button span:after {
+         margin-bottom: 2px;
+    }
+    #index_news .more_button {
+        margin-top: 70px;
+    }
+    #index_news .more_button a {
+        line-height: 76px;
+        height: 80px;
+        letter-spacing: 1px;
+        width: 360px;
+    }
+    #index_news .more_button a:after {
+        margin-bottom: 5px;
+    }
+
+    #news .more_button a:before {
+        margin-bottom: -4px;
+    }
+    #news .more_button {
+        margin-top: 70px;
+    }
+
+    .contact_block .more_button a {
+        width: 300px;
+        height: 80px;
+        line-height: 70px;
+    }
+    .contact_block .more_button a:after {
+        margin-bottom: 3px;
+    }
+
+    #connecntion .connect_link {
+        line-height: 180px;
+        font-size: 36px;
+    }
+    #connecntion .connect_link a:after {
+         margin-bottom: 5px;
+    }
+
+    #footer .company {
+        font-size: 18px;
+        padding-right: 90px;
+        line-height: 30px;
+        margin-bottom: 67px;
+    }
+    #footer .soc {
+        letter-spacing: 60px;
+    }
+    #footer h2 {
+        font-family: "Museo Sans Cyrl 900";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 30px;
+        margin: 0;
+        letter-spacing: 1.5px;
+        color: #FFF;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    #footer .location {
+        padding-left: 25px;
+        position: relative;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    #footer .location span {
+        display: block;
+        font-family: "Museo Sans Cyrl 900";
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    #footer .phone, #footer .fax, #footer .mail {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    #footer .copyright {
+        font-size: 18px;
+    }
+
+    #fade_menu nav {
+        margin-top: -240px;
+    }
+    #fade_menu a {
+        padding: 20px 0;
+    }
+    #fade_menu a span {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    #fade_menu .close_menu a {
+        top: 110px;
+        width: 200px;
+        margin: -5px 0;
+        margin-left: -100px;
+        line-height: 60px;
+        height: 62px;
+    }
+
+    #contact_form .actions .input_submit {
+        width: 340px;
+        height: 70px;
+        line-height: 50px;
+        font-size: 24px;
+    }
+    #contact_form .actions .input_submit:after {
+        margin-bottom: 2px;
+    }
+    #contact_form .nessesary {
+        font-size: 20px;
+    }
+
+
+    .block .face1 {
+        background: url("../img/about/face1_3000.png") no-repeat 100% 224px;
+        min-height: 1290px;
+        padding-top: 70px;
+    }
+    .block .face2 {
+        background: url("../img/about/face2_3000.png") no-repeat 0 516px;
+        min-height: 1582px;
+    }
+
+    .news_block h1 {
+        margin-bottom: 25px;
+        font-size: 30px;
+        letter-spacing: 3.5px;
+    }
+    .news_block .item {
+        padding: 78px 60px 340px;
+        margin-bottom: 40px;
+    }
+    .news_block .item .date {
+        font-size: 64px;
+        line-height: 38px;
+        margin-bottom: 50px;
+    }
+    .news_block .item .date span {
+        font-size: 20px;
+    }
+    .news_block .item .date:after {
+        width: 75px;
+        height: 7px;
+        margin-top: 15px;
+    }
+    .news_block .item .header {
+        font-family: "Museo Sans Cyrl 500";
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .news_block .item .description {
+        font-family: "Museo Sans Cyrl 300";
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .nearly_news .prev, .nearly_news .next {
+        width: 40%;
+    }
+    .nearly_news .description {
+        margin-top: 40px;
+    }
+    .nearly_news .description .text {
+        font-size: 20px;
+    }
+    .nearly_news .description .name {
+        font-size: 20px;
+    }
+
+    .about_block h3 {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -0.5px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .portfolio_block h2 {
+        margin-top: 10px;
+    }
+    .portfolio_block p {
+        line-height: 35px;
+    }
+    .block .arrow_left {
+        margin-top: 50px;
+    }
+
 }
 @media (max-width: 1399px) {
     .container {
-        width: 1090px;
+        width: 1060px;
     }
     .block {
-        width: 1090px;
+        width: 1060px;
         margin: 0 auto;
+        margin-bottom: 100px;
     }
+    .map {
+        height: 500px;
+    }
+    h1 {
+        font-family: "Museo Sans Cyrl 900";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        letter-spacing: 0.5px;
+        line-height: 70px;
+        color: #000;
+    }
+
     #index_portfolio .item .description {
         padding: 10px 20px;
     }
@@ -1541,24 +2106,233 @@ body section * {
     #index_portfolio .item .description:after {
         display: none;
     }
+    .contact_block h1 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 44px;
+        letter-spacing: 4.5px;
+    }
+    .contact_block p {
+        margin-bottom: 18px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .contact_block .header {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .contact_block .more_button {
+        margin-top: 18px;
+    }
 }
 @media (max-width: 1199px) {
     .container {
-        width: 910px;
+        width: 890px;
     }
     .block {
-        width: 910px;
+        width: 890px;
         margin: 0 auto;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 90px;
     }
+    .map {
+        height: 500px;
+    }
+    body {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 38px;
+        letter-spacing: 0.5px;
+        line-height: 45px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 2.5px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 2.5px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 2.5px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .lead {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    ol {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    ol ol {
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    ul {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    ul ul {
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+
     #index_portfolio .item .description {
         padding: 10px 20px;
     }
-    #index_portfolio .item .description h1 {
+    #index_portfolio .item .description .h1 {
         margin: 10px 0;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 20px;
+        font-family: "Museo Sans Cyrl 500";
     }
     #index_portfolio .item .description .taglist .tag {
-        font-size: 13px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    #index_portfolio .item .description .more_button span {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    #index_portfolio .item .description .more_button {
+        font-size: 12px;
+    }
+    #index_news .more_button {
+        margin-bottom: 30px;
+    }
+
+    #fade_menu a span {
+        line-height: 24px;
+    }
+
+    .block h1 {
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    .block h1:after {
+        margin-top: 45px;
+        width: 45px;
+        height: 3px;
+    }
+    .block .face1 {
+        background: url("../img/about/face1_1000.png") no-repeat 100% 130px;
+        min-height: 678px;
+        padding-top: 10px;
+    }
+    .block .face2 {
+        background: url("../img/about/face2_1000.png") no-repeat 0 330px;
+        min-height: 880px;
+    }
+    .block h1.big_padding {
+        padding-top: 175px;
+    }
+    .block h1.big_padding:after {
+        margin-top: 130px;
+    }
+    .block .arrow_left {
+        margin-top: 50px;
+    }
+
+    .news_block h1 {
+        margin-bottom: 25px;
+        font-size: 30px;
+        letter-spacing: 3.5px;
+    }
+    .news_block .item {
+        padding: 53px 47px 240px;
+    }
+    .news_block .item .date {
+        font-size: 36px;
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+    .news_block .item .date span {
+        font-size: 12px;
+    }
+    .news_block .item .date:after {
+        width: 43px;
+        height: 3px;
+        margin-top: 7px;
+    }
+    .news_block .item .header {
+        font-family: "Museo Sans Cyrl 500";
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 18px;
+    }
+    .news_block .item .description {
+        font-family: "Museo Sans Cyrl 300";
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .contact_block h1 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 36px;
+        letter-spacing: 3.5px;
+    }
+    .contact_block p {
+        margin-bottom: 16px;
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .contact_block .header {
+        margin-top: 15px;
+        margin-bottom: 9px;
+        font-size: 11px;
+    }
+
+    .contact_block .more_button {
+        margin-top: 8px;
+        font-size: 10px;
+    }
+    .contact_block .more_button a {
+        width: 124px;
+        height: 32px;
+        line-height: 24px;
+    }
+    .contact_block .more_button a:after {
+        background-position: 100% 50%;
+        margin-right: -30px;
+        width: 20px;
+        height: 7px;
+    }
+
+
+    .nearly_news .description {
+        margin-top: 20px;
+    }
+    .nearly_news .description .text {
+        font-size: 12px;
+    }
+    .nearly_news .description .name {
+        font-size: 12px;
+    }
+
+    .about_block h3 {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: -0.5px;
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
 }

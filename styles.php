@@ -88,7 +88,7 @@ include_once("big_slider.php");
         <a href="#" class="soc_link pt">Pintest</a>
     </div>
     <div class="nearly_news">
-        <a class="prev" href="/">
+        <a class="prev popup" href="?page=one_news">
             <span class="image">
                 <img src="img/news/news_1.jpg">
             </span>
@@ -97,7 +97,7 @@ include_once("big_slider.php");
                 <span class="name">Prada Needs You: The Search Is On</span>
             </span>
         </a>
-        <a class="next" href="/">
+        <a class="next popup" href="?page=one_news">
             <span class="image">
                 <img src="img/news/news_2.jpg">
             </span>

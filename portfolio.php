@@ -2,6 +2,16 @@
 if ($access != 1) exit();
 include_once("slider.php");
 ?>
+<div class="portfolio_part part_0">
+    <div class="image"></div>
+    <div class="description">
+        <h1>Дизайн интерьров</h1>
+        <p>
+            Бугор пучения по определению упруго восстанавливает минерал, все дальнейшее далеко выходит за рамки
+            текущего исследования и не будет здесь рассматриваться. Криопедология едва ли квантуема
+        </p>
+    </div>
+</div>
 <div class="block portfolio_block">
     <div class="row">
         <div class="col-sm-6 text-right">
@@ -28,26 +38,33 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_1.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_1.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                </div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_2.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_2.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование, репликация, модернизм</div>
+                    <div class="tag">Фантазия</div>
+                    <div class="tag">Волшебство, эльфы</div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_3.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_3.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                </div>
             </div>
         </div>
         <div class="col-sm-6">
@@ -62,11 +79,11 @@ include_once("slider.php");
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
-            <img src="img/portfolio/portfolio_5.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+        <div class="col-sm-12 text-center">
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_5.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                </div>
             </div>
         </div>
     </div>
@@ -107,33 +124,43 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_7.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_7.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                </div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_8.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_8.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_9.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_9.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                </div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_10.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_10.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                    <div class="tag">Фантазия</div>
+                    <div class="tag">Волшебство, эльфы</div>
+                </div>
             </div>
         </div>
     </div>
@@ -174,17 +201,21 @@ include_once("slider.php");
     </div>
     <div class="row">
         <div class="col-sm-6 text-right">
-            <img src="img/portfolio/portfolio_2.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_2.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                </div>
             </div>
         </div>
         <div class="col-sm-6">
-            <img src="img/portfolio/portfolio_3.jpg" alt="iqstudio" class="border-bottom">
-            <div class="taglist">
-                <div class="tag">Частный проект</div>
-                <div class="tag">Дизайн,проектирование</div>
+            <div class="image_wrapper">
+                <img src="img/portfolio/portfolio_3.jpg" alt="iqstudio" class="border-bottom">
+                <div class="taglist">
+                    <div class="tag">Частный проект</div>
+                    <div class="tag">Дизайн, проектирование</div>
+                </div>
             </div>
         </div>
     </div>
